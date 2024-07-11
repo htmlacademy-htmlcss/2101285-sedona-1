@@ -108,11 +108,11 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label for="min-price">от</label>
-                  <input type="number" id="min-price" placeholder="0" name="price">
+                  <input type="number" id="min-price" name="price" value="0">
                 </li>
                 <li class="catalog-filter-item">
                   <label for="max-price">до</label>
-                  <input type="number" id="max-price" placeholder="9000" name="price">
+                  <input type="number" id="max-price" name="price" value="9000">
                 </li>
               </ul>
             </fieldset>
@@ -125,6 +125,92 @@
               </button>
             </div>
           </form>
+        </section>
+        <section class="catalog-housing">
+          <h2 class="catalog-housing-title">Найдено гостиниц: <span class="search-result">38</span></h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <span class="visually-hidden">Вид</span>
+          <a class="button button-active" href="#">
+            <span class="visually-hidden">Плитка</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Значки</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Список</span>
+          </a>
+          <div class="housing-cards">
+            <ul class="housing-list">
+              <li class="housing-item">
+                <a class="housing-link" href="#">
+                  <h3 class="housing-title">Amara Resort & Spa</h3>
+                  <img class="housing-image" src="#" alt="Ущелье на фоне звёздного неба">
+                </a>
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-price">От 4000 ₽</span>
+                <a class="housing-more" href="#">Подробнее</a>
+                <button class="housing-favourites" type="button">В избранное</button>
+                <span class="visually-hidden">Четыре звезды</span>
+              </li>
+              <li class="housing-item">
+                <a class="housing-link" href="#">
+                  <h3 class="housing-title">Villas at Poco Diablo</h3>
+                  <img class="housing-image" src="#" alt="Радуга на фоне скал">
+                </a>
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-price">От 5000 ₽</span>
+                <a class="housing-more" href="#">Подробнее</a>
+                <button class="housing-favourites favourites-active" type="button">В избранном</button>
+                <span class="visually-hidden">Четыре звезды</span>
+              </li>
+              <li class="housing-item">
+                <a class="housing-link" href="#">
+                  <h3 class="housing-title">Desert Quail Inn</h3>
+                  <img class="housing-image" src="#" alt="Деревья и скалы">
+                </a>
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-price">От 2500 ₽</span>
+                <a class="housing-more" href="#">Подробнее</a>
+                <button class="housing-favourites" type="button">В избранное</button>
+                <span class="visually-hidden">Три звезды</span>
+              </li>
+              <li class="housing-item">
+                <a class="housing-link" href="#">
+                  <h3 class="housing-title">GreenTree Inn</h3>
+                  <img class="housing-image" src="#" alt="Скалы на фоне звёздного неба">
+                </a>
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-price">От 1500 ₽</span>
+                <a class="housing-more" href="#">Подробнее</a>
+                <button class="housing-favourites" type="button">В избранное</button>
+                <span class="visually-hidden">Две звезды</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <span class="pagination-hidden">...</span>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+
         </section>
       </header>
       <section class="newsletter">
